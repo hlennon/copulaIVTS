@@ -12,7 +12,9 @@ To obtain the R package, please get in touch at lennonh@iarc.fr.
 
 
 
-All statistical (R and SAS) codes used to implement a Monte Carlo Expectation Maximisation tent Class algorithm for maximum likelihood estimation of the dependence parameters of a digitised Gaussian ARMA model. Further described in the manuscript "Estimation of a digitised Gaussian ARMA model by Monte Carlo Expectation Maximisation", and in PhD Thesis format here ("https://www.research.manchester.ac.uk/portal/files/54587851/FULL_TEXT.PDF").   
+All statistical R codes used to implement a Monte Carlo Expectation Maximisation tent Class algorithm for maximum likelihood estimation of the dependence parameters of a digitised Gaussian ARMA model are provided in a package named copulaIVTS. 
+
+Details are described in the manuscript "Estimation of a digitised Gaussian ARMA model by Monte Carlo Expectation Maximisation", and further described in PhD Thesis format here ("https://www.research.manchester.ac.uk/portal/files/54587851/FULL_TEXT.PDF").   
 
 
 Available at https://doi.org/10.1016/j.csda.2018.10.015    
