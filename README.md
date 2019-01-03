@@ -4,14 +4,21 @@ Digitised Gaussian ARMA Models for Integer-valued time series: An R Package
 
 Maintainer: Hannah Lennon  
 Contact: lennonh@iarc.fr  
-Last Updated: 03rd January 2019  
+Last Updated: 03 January 2019  
+
+
 
 To obtain the R package, please get in touch at lennonh@iarc.fr.    
+
+
 
 All statistical (R and SAS) codes used to implement a Monte Carlo Expectation Maximisation tent Class algorithm for maximum likelihood estimation of the dependence parameters of a digitised Gaussian ARMA model. Further described in the manuscript "Estimation of a digitised Gaussian ARMA model by Monte Carlo Expectation Maximisation", and in PhD Thesis format here ("https://www.research.manchester.ac.uk/portal/files/54587851/FULL_TEXT.PDF").   
 
 
 Available at https://doi.org/10.1016/j.csda.2018.10.015    
+
+
+
 
 ### References  
 Lennon H, & Yuan J, Estimation of a digitised Gaussian ARMA model by Monte Carlo Expectation Maximisation, Computational Statistics & Data Analysis 2018;8:e020683. (online 7 November 2018)      
