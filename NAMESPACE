@@ -1,1 +1,7 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("grDevices", "dev.off", "pdf")
+    importFrom("graphics", "abline")
+    importFrom("stats", "ARMAacf", "ARMAtoMA", "arima.sim", "coef", "ecdf",
+               "glm", "nlm", "optim", "optimize", "plot.ts", "pnbinom",
+               "pnorm", "poisson", "ppois", "qgeom", "qnbinom", "qnorm",
+               "qpois", "runif", "toeplitz")

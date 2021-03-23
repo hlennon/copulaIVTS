@@ -73,20 +73,20 @@ GHK(3, Sigma, a, b)
 cbind(a, GHK(5, Sigma, c(-1, -2), c(1, 1)), b)
 
 # compare to approximate draw
-library(tmvtnorm)
-t(rtmvnorm(3, mean=c(0,0), Sigma, a, b))
+# library(tmvtnorm)
+# t(rtmvnorm(3, mean=c(0,0), Sigma, a, b))
 
 
 # A 300-dimensional example
-d = 300
-Sigma  <- toeplitz(c(0.9^(1:d)))
-a <- rep(-2, times=d)
-b <- rep( 1, times=d)
-system.time(GHK(d, Sigma, a, b))
+# d = 300
+# Sigma  <- toeplitz(c(0.9^(1:d)))
+# a <- rep(-2, times=d)
+# b <- rep( 1, times=d)
+# system.time(GHK(d, Sigma, a, b))
 
 # compare to approximate draw
-library(tmvtnorm)
-system.time(t(rtmvnorm(d, mean=rep(0,times=d), Sigma, a, b ,algorithm="gibbsR")))
+# library(tmvtnorm)
+# system.time(t(rtmvnorm(d, mean=rep(0,times=d), Sigma, a, b ,algorithm="gibbsR")))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
