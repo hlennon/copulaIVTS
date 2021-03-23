@@ -1,0 +1,62 @@
+\name{direct_GCNB_AR1_likelihood}
+\alias{direct_GCNB_AR1_likelihood}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{direct_GCNB_AR1_likelihood
+}
+\description{Direct Likelihood evaluation Ar1
+Requires: mnormt, mvtnorm
+}
+
+\usage{
+direct_GCNB_AR1_likelihood(rho, p, s, data, method="mnormt")
+}
+\arguments{
+  \item{rho}{AR(1) dependence structure with parameter rho}
+  \item{nb.p}{ X_t ~ NB (p, s)}
+  \item{nb.s}{ X_t ~ NB (p, s)}
+  \item{data}{ observed data}
+  \item{method}{ a string of value "mnormt" or "mvtnorm" only}
+  }
+\details{
+Evaluated likelihood function directly}
+\value{
+A numeric value of the evaluated likelihood function given the observed data and parameters rho, nb.p and nb.s.
+}
+\references{
+Shi and Valdez, (2012), Longitudinal Modelling of Insurance Claims using Jittering.}
+\author{
+Hannah Lennon
+<drhannahlennon@gmail.com>
+}
+\note{
+Only AR(1) dependence structure is used, it is not generalisd to ARMA(p,q)}
+
+
+\examples{
+
+library(mnormt)
+library(mvtnorm)
+
+
+n <- 4
+set.seed(n)
+simdata    <- arima.sim(n, model=list(ar=0.7))
+data       <- qnbinom(pnorm(simdata), prob=0.3, size=3)
+cov        <- ARMAacf(ar=0.7, lag.max=n-1, pacf=FALSE)
+
+direct_GCNB_ARMA_likelihood(cov, 0.3, 3, data, method="mnormt")
+direct_GCNB_AR1_likelihood(0.7,  0.3, 3, data, method="mnormt")
+
+direct_GCNB_ARMA_likelihood(cov,  0.3, 3, data, method="mvtnorm")
+direct_GCNB_AR1_likelihood(0.7,  0.3, 3, data, method="mvtnorm")
+
+
+}
+
+%\donotrun{
+%optimise(f=direct_GCNB_AR1_likelihood, interval=c(-0.9, 0.9), p=0.3, s=3, data=data, method="mnormt",  maximum=TRUE)
+%optimise(f=direct_GCNB_AR1_likelihood, interval=c(-0.9, 0.9), p=0.3, s=3, data=data, method="mvtnorm",  maximum=TRUE)}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+%\keyword{ ~kwd1 }
+%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
