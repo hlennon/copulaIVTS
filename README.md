@@ -16,7 +16,7 @@ and further described in PhD Thesis format here [https://www.research.manchester
 
 
 
-Please note, there are two alternative estimation methods to fit the digitised Gaussian ARMA model provided in the Thesis link;   
+To be be added to the R package shortly, there are two alternative estimation methods to fit the digitised Gaussian ARMA model provided in the Thesis link;   
 - via Approximate Bayesian Computation (ABC) and   
 - via approximate MLE via a d-vine bivariate copula representation.
 
