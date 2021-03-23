@@ -8,5 +8,7 @@ Description: A MCEM (Monte-Carlo Expectation Maximisation) algorithm to fit a di
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
-Imports: dfoptim, polynom, VGAM, MASS, numDeriv, forecast
+Imports: dfoptim, polynom, VGAM, MASS, numDeriv, forecast, mnormt, mvtnorm
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
