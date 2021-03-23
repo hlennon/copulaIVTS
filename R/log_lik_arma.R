@@ -1,3 +1,4 @@
+#' @export
 log_lik_arma <-function(xxx, para, order){
                     m <- ncol(xxx)
                     Ij   <- numeric(m)

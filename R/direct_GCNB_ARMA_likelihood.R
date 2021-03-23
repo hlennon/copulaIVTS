@@ -1,3 +1,4 @@
+#' @export
 direct_GCNB_ARMA_likelihood <-
 function(covariances, nb.p, nb.s, data, method="mvtnorm") {
                     n <- length(data)

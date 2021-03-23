@@ -1,6 +1,9 @@
+#' @export
 MCEM_POLIO <-
-function(obs.data, Monte_Carlo_samples, p, q, initial, marginal_dist, num_iterations,
-                 prec=0.00001, optim_method="nmkb", compute_stderrors=TRUE){
+function(obs.data, Monte_Carlo_samples, p, q, initial,
+         marginal_dist, num_iterations,
+         prec=0.00001, optim_method="nmkb",
+         compute_stderrors=TRUE){
                     if(compute_stderrors==TRUE) require(numDeriv)
                     p <<- p
                     q <- q

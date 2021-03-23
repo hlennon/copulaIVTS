@@ -1,3 +1,4 @@
+#' @export
 generate_data <-
 function (n, a, b, marginal_dist, marginal_parameters){
 

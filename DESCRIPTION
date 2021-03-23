@@ -1,6 +1,6 @@
 Package: copulaIVTS
 Type: Package
-Title: Maximum Likelihood Estimation of a digitised Gaussian ARMA(p,q) model for Integer-Valued Time Series
+Title: Dependence modelling of a digitised Gaussian ARMA(p,q) copula model for Integer-Valued Time Series
 Version: 1.2
 Author: Hannah Lennon <drhannahlennon@gmail.com>
 Maintainer: Hannah Lennon <drhannahlennon@gmail.com>
@@ -8,5 +8,5 @@ Description: A MCEM (Monte-Carlo Expectation Maximisation) algorithm to fit a di
 License: GPL (>=2)
 Encoding: UTF-8
 LazyData: true
-Imports: dfoptim, polynom, VGAM, MASS, numDeriv
-RoxygenNote: 6.0.1
+Imports: dfoptim, polynom, VGAM, MASS, numDeriv, forecast
+RoxygenNote: 7.1.1

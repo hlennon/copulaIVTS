@@ -1,3 +1,4 @@
+#' @export
 direct_GCNB_AR1_likelihood <-
 function(rho, nb.p, nb.s, data, method="mnormt") {
                     n <- length(data)

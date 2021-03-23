@@ -1,3 +1,4 @@
+#' @export
 ensure_causality_invertibility <- function(parameters){
                     L   <- length(parameters)
                     ps  <- polynom::polynomial(c(-parameters[L:1],1))

@@ -46,15 +46,16 @@ g   <- -g/2
 library(forecast)
 
 # Example 1
-data(ins.data)
-data  <- ins.data[1:200]
+library(gamlss.data)
+data(polio)
+data  <- polio
 order <- c(1,1)
 arma_loglikelihood(c(0.7, -0.5), data, c(1,1))
 
 
 
 # Example 2
-data  <- arima.sim(model=list(ar =c(0.4, -0.5), ma=c(0.8, 0.2)), n=2000)
+data  <- forecast::arima.sim(model=list(ar =c(0.4, -0.5), ma=c(0.8, 0.2)), n=2000)
 order <- c(2,2)
 para  <- c(0,0,0,0)
 

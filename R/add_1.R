@@ -1,3 +1,4 @@
+#' @export
 add_1 <-
 function(j) {
   m <- length(j)

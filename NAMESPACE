@@ -5,3 +5,4 @@ importFrom("grDevices", "dev.off", "pdf")
                "glm", "nlm", "optim", "optimize", "plot.ts", "pnbinom",
                "pnorm", "poisson", "ppois", "qgeom", "qnbinom", "qnorm",
                "qpois", "runif", "toeplitz")
+importFrom("mnormt", "pmnorm")
