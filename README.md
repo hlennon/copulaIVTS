@@ -1,12 +1,12 @@
 # `copulaIVTS` 
-An R Package: Digitised Gaussian ARMA Models for Integer-valued time series
+An R Package: Digitised Gaussian copula ARMA Models for Integer-valued time series
 
 Maintainer: Hannah Lennon  
 Contact: drhannahlennon@gmail.com  
 Last Updated: 23 March 2021  
        
 
-The R package `copulaIVTS` provides all statistical R used to implement a Monte Carlo Expectation Maximisation algorithm for maximum likelihood estimation of the dependence parameters of a digitised Gaussian ARMA model. Useful for count time series also.   
+The R package `copulaIVTS` provides all statistical R used to implement a Monte Carlo Expectation Maximisation algorithm for maximum likelihood estimation of the dependence parameters of a digitised Gaussian copula ARMA model. Useful for count time series also.   
 
 
 Details are described in the manuscript "Estimation of a digitised Gaussian ARMA model by Monte Carlo Expectation Maximisation",   
